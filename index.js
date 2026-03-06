@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import supabase from "./config/supabase.js";
 import authRoutes from "./routes/authRoutes.js";
+import ngoRoutes from "./routes/ngoRoutes.js";
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRoutes);
+app.use("/ngo", ngoRoutes);
 
 /*
 TEST SUPABASE CONNECTION
