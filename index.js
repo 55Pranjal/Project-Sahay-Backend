@@ -5,6 +5,7 @@ import supabase from "./config/supabase.js";
 import authRoutes from "./routes/authRoutes.js";
 import ngoRoutes from "./routes/ngoRoutes.js";
 import needsRoutes from "./routes/needsRoutes.js";
+import surplusRoutes from "./routes/surplusRoutes.js";
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
 app.use("/auth", authRoutes);
 app.use("/ngo", ngoRoutes);
 app.use("/api/needs", needsRoutes);
+app.use("/api/surplus", surplusRoutes);
 
 /*
 TEST SUPABASE CONNECTION
