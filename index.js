@@ -6,6 +6,8 @@ import authRoutes from "./routes/authRoutes.js";
 import ngoRoutes from "./routes/ngoRoutes.js";
 import needsRoutes from "./routes/needsRoutes.js";
 import surplusRoutes from "./routes/surplusRoutes.js";
+import contactRoutes from "./routes/contactRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
 
 dotenv.config();
 
@@ -22,6 +24,8 @@ app.use("/auth", authRoutes);
 app.use("/ngo", ngoRoutes);
 app.use("/api/needs", needsRoutes);
 app.use("/api/surplus", surplusRoutes);
+app.use("/api/contacts", contactRoutes);
+app.use("/api/admin", adminRoutes);
 
 /*
 TEST SUPABASE CONNECTION
