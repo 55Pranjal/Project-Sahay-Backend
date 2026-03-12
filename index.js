@@ -9,6 +9,7 @@ import surplusRoutes from "./routes/surplusRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import searchRoutes from "./routes/searchRoutes.js";
+import notificationRoutes from "./routes/notificationRoutes.js";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use("/api/surplus", surplusRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/search", searchRoutes);
+app.use("/api/notifications", notificationRoutes);
 
 /*
 TEST SUPABASE CONNECTION
